@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159224536-2"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'UA-159224536-2');
-</script>
-    
     <meta charset=utf-8>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta name=description content="OpenLayer - Map multiple markers.">
@@ -26,6 +16,11 @@ gtag('config', 'UA-159224536-2');
         }
         .ol-tooltip {
             display: flex; overflow: hidden;
+            padding: 3px; margin: 3px 0px;
+            border-radius: 6px;
+        }
+        .ol-tooltip:hover{
+            background: rgba(102, 51, 153, 0.062)
         }
         .ol-tooltip img {
             float: left; padding: 5px;
@@ -51,10 +46,10 @@ gtag('config', 'UA-159224536-2');
         .ol-popup {
             position: absolute;
             background-color: white;
-            filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+            filter: drop-shadow(0 1px 4px rgba(0,0,0,0.1));
             padding: 10px;
             border-radius: 10px;
-            border: 1px solid #cccccc;
+            border: 1px solid #cccccc2a;
             bottom: 12px;
             width: 210px;
             transform: translate(-50%, 0%);
@@ -78,7 +73,7 @@ gtag('config', 'UA-159224536-2');
         }
 
         .ol-popup:before {
-            border-top-color: #cccccc;
+            border-top-color: #cccccc2a;
             border-width: 11px;
             left: 120px;
             margin-left: -16px;
@@ -111,8 +106,8 @@ gtag('config', 'UA-159224536-2');
     </style>
 
     <!-- OpenLayers map -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css" type="text/css">
-    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
 
     <!-- Enable map parts -->
     <script defer src="ol-map-multiple-markers.js"></script>
