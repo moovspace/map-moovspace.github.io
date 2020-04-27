@@ -8,21 +8,38 @@
 
     <!-- fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2:400,500,600,700,800&display=swap&subset=latin-ext" rel="stylesheet">
 
-    <!-- OpenLayers map -->
+    <!-- OpenLayers map
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css" type="text/css">
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
+    -->
 
     <link rel="stylesheet" href="data/style.css">
     <script defer src="data/main.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Baloo Bhaina 2', cursive;
+        }
+        h1,p,ul{
+            float: left; width: 100%; text-align: center;
+        }
+        ul li{
+            float: left; width: 100%; text-align: left;
+        }
+        ul li a{
+            color: #f60; font-weight: 900;
+        }
+    </style>
 </head>
 <body>
     <h1>Openlayers map exapmles</h1>
     <p>OpenLayers map marker with popup. Create marker with geolocation or double click. Delivery area with polygon. Multiple markers with html popups. Animated markers.</p>
     <ul>
-        <li> Openlayers map with popup: <br> https://moovspace.github.io/ol-map/map-marker-click.html </li>
-        <li> Openlayers map delivery area: <br> https://moovspace.github.io/ol-map/map-polygon.html </li>
-        <li> Openlayers map multiple markers html popup with images: <br> https://moovspace.github.io/ol-map/map-multiple-markers.html </li>
+        <li> <a href="https://moovspace.github.io/ol-map/map-marker-click.html"> Openlayers map with popup </a> </li>
+        <li> <a href="https://moovspace.github.io/ol-map/map-polygon.html"> Openlayers map delivery area </a> </li>
+        <li> <a href="https://moovspace.github.io/ol-map/map-multiple-markers.html"> Openlayers map multiple markers html popup with images </a> </li>
     </ul>
 </body>
 </html>
